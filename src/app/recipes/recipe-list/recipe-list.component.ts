@@ -13,5 +13,10 @@ export class RecipeListComponent {
       'This is simply a test',
       'https://cdn.pixabay.com/photo/2015/10/26/07/21/vegetables-1006694_1280.jpg'
     ),
+    new Recipe(
+      'A Test Recipe2',
+      'This is simply a test2',
+      'https://cdn.pixabay.com/photo/2015/10/26/07/21/vegetables-1006694_1280.jpg'
+    ),
   ];
 }
