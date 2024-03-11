@@ -11,12 +11,26 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe</button>
-      <ul class="dropdown-menu">
-        <li><a href="#">To shopping list</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+    <div class="btn-group" dropdown>
+      <button
+        id="button-basic"
+        type="button"
+        dropdownToggle
+        class="btn btn-primary dropdown-toggle"
+        aria-controls="dropdown-basic"
+      >
+        Manage Recipe
+      </button>
+      <ul
+        id="dropdown-basic"
+        *dropdownMenu
+        class="dropdown-menu"
+        role="menu"
+        aria-labelledby="dropdown-basic"
+      >
+        <li role="menu-item"><a class="dropdown-item" href="#">To shopping list</a></li>
+        <li role="menu-item"><a class="dropdown-item" href="#">Edit Recipe</a></li>
+        <li role="menu-item"><a class="dropdown-item" href="#">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
