@@ -28,7 +28,9 @@
         role="menu"
         aria-labelledby="dropdown-basic"
       >
-        <li role="menu-item"><a class="dropdown-item" href="#">To shopping list</a></li>
+        <li role="menu-item">
+          <a class="dropdown-item" (click)="onAddToShoppingList()" style="cursor: pointer">To shopping list</a>
+        </li>
         <li role="menu-item"><a class="dropdown-item" href="#">Edit Recipe</a></li>
         <li role="menu-item"><a class="dropdown-item" href="#">Delete Recipe</a></li>
       </ul>
